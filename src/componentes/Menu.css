@@ -1,0 +1,98 @@
+.Menu {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Menu {
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "logo crearpqrs consultarpqrs salir usuario";
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.crearpqrs {
+    grid-area: crearpqrs;
+}
+
+.consultarpqrs {
+    grid-area: consultarpqrs;
+}
+
+.salir {
+    grid-area: salir;
+}
+
+.usuario {
+    grid-area: usuario;
+}
+
+
+.logo-placeholder {
+    width: 60px;
+    height: 60px;
+    background-color: #FFF;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.Menu nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Menu nav ul li {
+    padding: 8px 0;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+}
+
+/*
+@media screen and (max-width: 768px) {
+    .Menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo-placeholder {
+        margin: 0;
+    }
+
+    .Menu nav ul {
+        display: flex;
+    }
+
+    .Menu nav ul li {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Menu {
+        flex-direction: column;
+    }
+
+    .Menu nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Menu nav ul li {
+        padding: 5px 0;
+    }
+}*/

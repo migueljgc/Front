@@ -1,0 +1,16 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { AppRouter } from '../router/AppRouter.jsx';
+import { BrowserRouter as Router } from 'react-router-dom';
+import '../router/AxiosConfig'
+import '../src/main.css'
+
+createRoot(document.getElementById('root')).render(
+    <StrictMode>
+        <div className="Contenedor">
+            <Router>
+                <AppRouter />
+            </Router>
+        </div>
+    </StrictMode>,
+)
