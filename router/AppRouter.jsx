@@ -5,6 +5,7 @@ import  Login  from '../src/Menus/Login';
 import { Navbar } from '../Navbar';
 import  HomePage  from '../src/componentes/Menu/HomePage';
 import Crear from '../src/Menus/User/Crear';
+import Registro from '../src/Menus/Registro';
 
 
 export const AppRouter = () => {
@@ -15,7 +16,7 @@ export const AppRouter = () => {
         <Route path="/HomePages" element={""} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Recuperacion" element={""} />
-        <Route path="/Registro" element={""} />
+        <Route path="/Registro" element={<Registro/>} />
         <Route path="/activate/:token" element={""} />
         <Route path="/reset-password/:token" element={""} />
         <Route path="*" element={<Login />} />

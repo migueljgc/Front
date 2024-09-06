@@ -1,0 +1,63 @@
+.Registro {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 0;
+    background-color: #05092F;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.FormularioRegistro {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+.Campo {
+    display: grid;
+    grid-template-columns: 35% 55%; /* Cambiamos el ancho de las columnas */
+    gap: 10px; /* Espacio entre el label y el input */
+    background: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 50%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.labels label, .inputs input {
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #000;
+    text-align: left;
+    
+}
+
+.labels label {
+    display: flex;
+    justify-self: end;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 3px;
+}
+
+.inputs input {
+    width: 100%; /* Hace que el input ocupe todo el espacio disponible */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
