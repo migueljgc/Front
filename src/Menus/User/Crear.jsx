@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../User/Crear.css'
-import Menu from '../../componentes/Menu';
+import {Menu} from '../../componentes/Menu';
 import axios from 'axios';
 
 const Crear = () => {
@@ -176,7 +176,7 @@ const Crear = () => {
 
     return (
         <div className="Crear">
-            <div className="header">
+            <div className="menus">
                 <Menu />
             </div>
             <div className="cuerpo">

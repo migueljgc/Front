@@ -1,18 +1,33 @@
 import React from 'react';
 import './HomePage.css';
-import Menu from '../Menu.jsx';
+import {Menu, MenuAdmin} from '../Menu.jsx';
 
-const HomePage = () => {
+export const HomePage = () => {
     return (
         <div className="HomePage">
-            <div class="header">
+            <div class="menus">
                 <Menu />
             </div>
-            <div class="cuerpo">
+            <div class="cuerpos">
+                <div className="fondo1"><p>dd</p></div>
+                <div className="fondo2"><p>dd</p></div>
             </div>
         </div>
 
     );
 };
 
-export default HomePage;;
+export const HomePageAdmin = () => {
+    return (
+        <div className="HomePage">
+            <div class="menus">
+                <MenuAdmin  />
+            </div>
+            <div class="cuerpos">
+                <div className="fondo1"><p>dd</p></div>
+                <div className="fondo2"><p>dd</p></div>
+            </div>
+        </div>
+
+    );
+};

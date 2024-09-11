@@ -3,9 +3,10 @@ import { Routes, Route } from 'react-router-dom';
 import { ProtectedRoute } from '../router/ProtectedRoute';
 import  Login  from '../src/Menus/Login';
 import { Navbar } from '../Navbar';
-import  HomePage  from '../src/componentes/Menu/HomePage';
+import  {HomePage, HomePageAdmin } from '../src/componentes/Menu/HomePage';
 import Crear from '../src/Menus/User/Crear';
 import Registro from '../src/Menus/Registro';
+import Consultar from '../src/Menus/User/Consultar';
 
 
 export const AppRouter = () => {
@@ -25,7 +26,7 @@ export const AppRouter = () => {
 
         {/* Rutas Admin */}
         <Route path="/HomePagesAdmin" element={
-          <ProtectedRoute allowedRoles={['ADMIN']} element={""} />
+          <ProtectedRoute allowedRoles={['ADMIN']} element={<HomePageAdmin />} />
         } />
 
         {/* Rutas Usuario */}
@@ -34,6 +35,9 @@ export const AppRouter = () => {
         } />
         <Route path="/Crear" element={
           <ProtectedRoute allowedRoles={['USER']} element={<Crear/>} />
+        } />
+        <Route path="/Consultar" element={
+          <ProtectedRoute allowedRoles={['USER']} element={<Consultar/>} />
         } />
 
         {/* Rutas Secretario */}

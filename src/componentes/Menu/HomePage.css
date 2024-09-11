@@ -1,28 +1,40 @@
 .HomePage {
-    display: grid;
-    height: 100vh;
     font-family: 'Montserrat', sans-serif;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0fr 2fr;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 0.3fr;
     grid-auto-columns: 1fr;
     gap: 0px 2px;
     grid-auto-flow: row;
     grid-template-areas:
-        "header"
-        "cuerpo";
+        "menus cuerpos";
 }
 
-.header {
-    grid-area: header;
+.menus {
+    grid-area: menus;
 }
 
-.cuerpo {
-    grid-area: cuerpo;
-    background-color: beige;
+
+.cuerpos {
+    grid-area: cuerpos;
+    background-color: #05092F;
     align-items: center;
     text-align: center;
-}
 
+}
+.fondo1{
+    background-color: #05092F;
+    height: 30%;
+    margin: 0;
+    padding: 0;
+}
+.fondo2{
+    background-color: beige;
+    height: 70%;
+    margin: 0;
+    padding: 0;
+}
 .title {
     font-size: 27px;
     color: #000000;
@@ -86,5 +98,3 @@
 .submit-btn:hover {
     background-color: #FF7200;
 }
-
-

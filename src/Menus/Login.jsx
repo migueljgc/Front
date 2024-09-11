@@ -75,7 +75,7 @@ function Login() {
                     window.location.href = '/HomePagesAdmin';
                     localStorage.setItem('logget', true);
                 } else if (authorities.includes('USER')) {
-                    window.location.href = '/ComponenteMenu';
+                    window.location.href = '/HomePage';
                     localStorage.setItem('logget', true);
                 } else if (authorities.includes('SECRE')) {
                     window.location.href = '/HomePagesSecre';
