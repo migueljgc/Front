@@ -117,7 +117,7 @@ function Login() {
                         <input placeholder='Contraseña' type="password" id="password" value={password} onChange={e => setPassword(e.target.value)} required />
                     </div>
                     <div className="Botones">
-                        <button type="submit">Sign Up</button>
+                        <button type="submit">INGRESAR</button>
                     </div>
                     <div className="Checkbox">
                         <div className="CheckboxYRegistro">

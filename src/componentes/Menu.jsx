@@ -75,7 +75,9 @@ export const MenuAdmin = () => {
   return (
     <div className="Menu">
 
-      <div className="logo"></div>
+      <div className="logo">
+        <img src="/images/logo.png" alt="Logo" className='logos'/>
+      </div>
 
       <div className="opciones">
         <div className="dashboard">

@@ -18,7 +18,7 @@
 
 .cuerpo {
     grid-area: cuerpo;
-    background-image: url('/images/image_4k.png');
+    background-image: url('/images/image.png');
     background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
     background-position: center; /* Centra la imagen en la pantalla */
     background-repeat: no-repeat; /* Evita que la imagen se repita */

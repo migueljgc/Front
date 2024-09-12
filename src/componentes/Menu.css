@@ -1,5 +1,5 @@
 .Menu {
-    background-color: #ffffff;
+    background-color: #ebeef3;
     color: #000000;
     padding: 10px;
     box-sizing: border-box;
@@ -24,6 +24,10 @@
 
 .logo {
     grid-area: logo;
+}
+.logos{
+    width: 80%; /* Cambia a la medida que prefieras */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 .opciones {

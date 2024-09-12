@@ -24,8 +24,8 @@ export const HomePageAdmin = () => {
                 <MenuAdmin  />
             </div>
             <div class="cuerpos">
-                <div className="fondo1"><p>dd</p></div>
-                <div className="fondo2"><p>dd</p></div>
+                <div className="fondo1"></div>
+                <div className="fondo2"></div>
             </div>
         </div>
 

@@ -7,31 +7,47 @@ const Registro = () => {
             <div className="FormularioRegistro">
                 
                 <form className='forms'>
-                    <div className="Titulo">
+                    <div className="titulo">
                         <h1>Registrate</h1>
                     </div>
-                    <div className="Campo">
-                        <div className="labels"><label >Tipo De Persona</label><br />
-                            <label >Tipo De Identificacion</label><br />
-                            <label >Numero De Identificacion</label><br />
-                            <label >Nombres Completos</label><br />
-                            <label >Apellidos Completos</label><br />
-                            <label >Correo Electronico</label><br />
-                            <label >Telefono</label><br />
-                            <label >Usuario</label><br />
+                    <div className="Campos">
+                        <div className="labelsAndInputs">
+                            <label >Tipo De Persona</label>
+                            <input className='inputs' type="text" required />
+                        </div>
+                        <div className="labelsAndInputs">
+                            <label >Tipo De Identificacion</label>
+                            <input className='inputs' type="text" required />
+                        </div>
+                        <div className="labelsAndInputs">
+                            <label >Numero De Identificacion</label>
+                            <input className='inputs' type="text" required />
+                        </div>
+                        <div className="labelsAndInputs">
+                            <label >Nombres Completos</label>
+                            <input className='inputs' type="text" required />
+                        </div>
+                        <div className="labelsAndInputs">
+                            <label >Apellidos Completos</label>
+                            <input className='inputs' type="text" required />
+                        </div>
+                        <div className="labelsAndInputs">
+                            <label >Correo Electronico</label>
+                            <input className='inputs' type="text" required />
+                        </div>
+                        <div className="labelsAndInputs">
+                            <label >Telefono</label>
+                            <input className='inputs' type="text" required />
+                        </div>
+                        <div className="labelsAndInputs">
+                            <label >Usuario</label>
+                            <input className='inputs' type="text" required />
+                        </div>
+                        <div className="labelsAndInputs">
                             <label >Contraseña</label>
+                            <input className='inputs' type="text" required />
                         </div>
-                        <div className="inputs">
-                            <input type="text" required />
-                            <input type="text" required />
-                            <input type="text" required />
-                            <input type="text" required />
-                            <input type="text" required />
-                            <input type="text" required />
-                            <input type="text" required />
-                            <input type="text" required />
-                            <input type="text" required />
-                        </div>
+
 
                     </div>
                 </form>

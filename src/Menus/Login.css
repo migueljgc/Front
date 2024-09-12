@@ -48,7 +48,7 @@ html, body {
   border: 1px solid black; /* Borde gris claro alrededor del campo */
   border-radius: 8px; /* Bordes redondeados en el campo */
   margin-bottom: 20px; /* Espacio debajo del campo */
-  background: white;
+  background: #cadae5;
   
 }
 
@@ -76,7 +76,7 @@ a {
 
 /* Estilo del botón en .BotonesYCheckbox */
 .Botones button {
-  background-color: #fc4b08; /* Color de fondo del botón */
+  background-color: #ec7548; /* Color de fondo del botón */
   color: white; /* Color del texto del botón */
   border: none; /* Sin borde alrededor del botón */
   padding: 10px 20px; /* Espaciado interno (padding) */

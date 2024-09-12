@@ -1,5 +1,6 @@
 .HomePage {
     font-family: 'Montserrat', sans-serif;
+    background-color: #ebeef3;
     height: 100vh;
     display: grid;
     grid-template-columns: 0.5fr 1.5fr;
@@ -18,23 +19,13 @@
 
 .cuerpos {
     grid-area: cuerpos;
-    background-color: #05092F;
+    background-color: #03072B ;
     align-items: center;
     text-align: center;
+    background-image: url('/images/image.png');
 
 }
-.fondo1{
-    background-color: #05092F;
-    height: 30%;
-    margin: 0;
-    padding: 0;
-}
-.fondo2{
-    background-color: beige;
-    height: 70%;
-    margin: 0;
-    padding: 0;
-}
+
 .title {
     font-size: 27px;
     color: #000000;
