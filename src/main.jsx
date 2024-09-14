@@ -7,10 +7,8 @@ import '../src/main.css'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <div className="Contenedor">
             <Router>
                 <AppRouter />
             </Router>
-        </div>
     </StrictMode>,
 )

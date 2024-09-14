@@ -104,38 +104,44 @@ function Login() {
     }
 
     return (
-        <div className="content">
-            <div className="Formulario" onSubmit={onLogin}>
-                <form>
-                    <div className="Titulo">
-                        <h1>Iniciar Sesión</h1>
-                    </div>
-                    <div className="Campo">
-                        <input placeholder='Usuario' type="text" id="user" value={user} onChange={e => setUser(e.target.value)} required />
-                    </div>
-                    <div className="Campo">
-                        <input placeholder='Contraseña' type="password" id="password" value={password} onChange={e => setPassword(e.target.value)} required />
-                    </div>
-                    <div className="Botones">
-                        <button type="submit">INGRESAR</button>
-                    </div>
-                    <div className="Checkbox">
-                        <div className="CheckboxYRegistro">
-                            <a href="/Registro">Registrar</a>
-                            <label>
-                                <input type="checkbox" checked={rememberMe}
-                                    onChange={(e) => setRememberMe(e.target.checked)} />
-                                Recordar
-                            </label>
+        <div class="login">
+            <div class="logopqrsmart">
+            <img src="/images/logo2.png" alt="Logo" />
+            </div>
+            <div className="content">
+                <div className="Formulario" onSubmit={onLogin}>
+                    <form>
+                        <div className="Titulo">
+                            <h1>Iniciar Sesión</h1>
                         </div>
-                    </div>
-                    <div className="OlvidasteContra">
-                        <a href="/Recuperacion">¿Olvidaste tu contraseña?</a>
-                    </div>
+                        <div className="Campo">
+                            <input placeholder='Usuario' type="text" id="user" value={user} onChange={e => setUser(e.target.value)} required />
+                        </div>
+                        <div className="Campo">
+                            <input placeholder='Contraseña' type="password" id="password" value={password} onChange={e => setPassword(e.target.value)} required />
+                        </div>
+                        <div className="Botones">
+                            <button type="submit">INGRESAR</button>
+                        </div>
+                        <div className="Checkbox">
+                            <div className="CheckboxYRegistro">
+                                <a href="/Registro">Registrar</a>
+                                <label>
+                                    <input type="checkbox" checked={rememberMe}
+                                        onChange={(e) => setRememberMe(e.target.checked)} />
+                                    Recordar
+                                </label>
+                            </div>
+                        </div>
+                        <div className="OlvidasteContra">
+                            <a href="/Recuperacion">¿Olvidaste tu contraseña?</a>
+                        </div>
 
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
+
     )
 }
 

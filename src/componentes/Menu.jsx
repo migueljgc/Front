@@ -27,7 +27,9 @@ export const Menu = () => {
   }
   return (
     <div className="Menu">
-      <div className="logo"></div>
+      <div className="logo">
+        <img src="/images/logo.png" alt="Logo" className='logos' />
+      </div>
       <div className="opciones">
         <div className="crearpqrs">
           <nav>
@@ -76,7 +78,7 @@ export const MenuAdmin = () => {
     <div className="Menu">
 
       <div className="logo">
-        <img src="/images/logo.png" alt="Logo" className='logos'/>
+        <img src="/images/logo.png" alt="Logo" className='logos' />
       </div>
 
       <div className="opciones">
@@ -97,7 +99,7 @@ export const MenuAdmin = () => {
         <div className="gestioncate">
           <nav>
             <ul>
-              <li onClick={handleConsultar}><RxDashboard  className='icon' /> Gestion Categorias</li>
+              <li onClick={handleConsultar}><RxDashboard className='icon' /> Gestion Categorias</li>
             </ul>
           </nav>
         </div>
@@ -140,7 +142,9 @@ export const MenuSecre = () => {
   }
   return (
     <div className="Menu">
-      <div className="logo"></div>
+      <div className="logo">
+        <img src="/images/logo.png" alt="Logo" className='logos' />
+      </div>
       <div className="opciones">
         <div className="crearpqrs">
           <nav>
