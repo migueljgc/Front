@@ -163,7 +163,7 @@ const Crear = () => {
             });
             console.log(respuesta.data)
             const responseData = respuesta.data;
-            const numRadicado = responseData.requestState;
+            const numRadicado = responseData.radicado;
             console.log(response1.data)
 
             alert('Solicitud Radicada Con Exito Su Numero De Radicado es: ' + numRadicado);

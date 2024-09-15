@@ -6,10 +6,13 @@ import axios from 'axios';
 
 const GestionUsuario = () => {
     const [data, setData] = useState([]);
+    const token = localStorage.getItem('token');
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:8080/api/user/get')
+            const response = await axios.get('http://localhost:8080/api/Usuario/get',{
+                'Authorization': `Bearer ${token}`
+            })
             setData(response.data);
             console.log(response.data)
         } catch (error) {
@@ -27,21 +30,26 @@ const GestionUsuario = () => {
             selector: row => row.user
         },
         {
-            name: 'Contraseña',
-            selector: row => row.password
+            name: 'Nombre',
+            selector: row => row.name
         },
         {
-            name: 'Estdo de Usuario',
+            name: 'Apellido',
+            selector: row => row.lastName
+        },
+        {
+            name: 'Identificacion',
+            selector: row => row.identificationNumber
+        },
+        {
+            name: 'Rol',
+            selector: row => row.role
+        },
+        {
+            name: 'Estado',
             selector: row => row.stateUser
         },
-        {
-            name: 'Dependencia',
-            selector: row => row.dependence.nameDependence
-        },
-        {
-            name: 'Tipos de Persona',
-            selector: row => row.personType.namePersonType
-        },
+
     ]
     return (
         <div className='GestionUsuario'>
