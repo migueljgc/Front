@@ -68,11 +68,17 @@ export const MenuAdmin = () => {
     navigate('/Login');
   };
 
-  const handleCreate = () => {
-    navigate('/Crear')
+  const handleDashboar = () => {
+    navigate('/Dashboard')
   }
-  const handleConsultar = () => {
-    navigate('/Consultar')
+  const handleGestionUsuario = () => {
+    navigate('/GestionUsuario')
+  }
+  const handleGestionCategoria = () => {
+    navigate('/GestionCategoria')
+  }
+  const handleGestionDependencia = () => {
+    navigate('/GestionDependencia')
   }
   return (
     <div className="Menu">
@@ -85,28 +91,28 @@ export const MenuAdmin = () => {
         <div className="dashboard">
           <nav>
             <ul>
-              <li onClick={handleCreate}><VscGraph className='icon' /> Dashboard</li>
+              <li onClick={handleDashboar}><VscGraph className='icon' /> Dashboard</li>
             </ul>
           </nav>
         </div>
         <div className="gestionuser">
           <nav>
             <ul>
-              <li onClick={handleConsultar}><RiContactsBook2Line className='icon' /> Gestion Usuario</li>
+              <li onClick={handleGestionUsuario}><RiContactsBook2Line className='icon' /> Gestion Usuario</li>
             </ul>
           </nav>
         </div>
         <div className="gestioncate">
           <nav>
             <ul>
-              <li onClick={handleConsultar}><RxDashboard className='icon' /> Gestion Categorias</li>
+              <li onClick={handleGestionCategoria}><RxDashboard className='icon' /> Gestion Categorias</li>
             </ul>
           </nav>
         </div>
         <div className="gestiondepe">
           <nav>
             <ul>
-              <li onClick={handleConsultar}><IoHomeOutline className='icon' /> Gestion Dependencias</li>
+              <li onClick={handleGestionDependencia}><IoHomeOutline className='icon' /> Gestion Dependencias</li>
             </ul>
           </nav>
         </div>

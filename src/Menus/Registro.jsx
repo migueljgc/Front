@@ -238,7 +238,7 @@ const Registro = () => {
                                 name="contraseña"
                                 value={formData.contraseña}
                                 onChange={handleChange} required
-                            />
+                            /> 
                             {passwordError && <div className='errore'> {passwordError}</div>}
                         </div>
                         <div className="labelsAndInputs">
@@ -249,7 +249,7 @@ const Registro = () => {
                                 name="confirmarContraseña"
                                 value={formData.confirmarContraseña}
                                 onChange={handleChange} required
-                            />
+                            /> 
                             {confirmPasswordError && <div className='errore'> {confirmPasswordError}</div>}
                         </div>
                         <div className="Buton">

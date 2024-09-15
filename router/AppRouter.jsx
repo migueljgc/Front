@@ -7,6 +7,10 @@ import  {HomePage, HomePageAdmin } from '../src/componentes/Menu/HomePage';
 import Crear from '../src/Menus/User/Crear';
 import Registro from '../src/Menus/Registro';
 import Consultar from '../src/Menus/User/Consultar';
+import GestionUsuario from '../src/Menus/Admin/GestionUsuario';
+import GestionCategoria from '../src/Menus/Admin/GestionCategoria';
+import GestionDependencia from '../src/Menus/Admin/GestionDependencia';
+import Dashboard from '../src/Menus/Admin/Dashboard';
 
 
 export const AppRouter = () => {
@@ -27,6 +31,18 @@ export const AppRouter = () => {
         {/* Rutas Admin */}
         <Route path="/HomePagesAdmin" element={
           <ProtectedRoute allowedRoles={['ADMIN']} element={<HomePageAdmin />} />
+        } />
+        <Route path="/Dashboard" element={
+          <ProtectedRoute allowedRoles={['ADMIN']} element={<Dashboard />} />
+        } />
+        <Route path="/GestionUsuario" element={
+          <ProtectedRoute allowedRoles={['ADMIN']} element={<GestionUsuario />} />
+        } />
+        <Route path="/GestionCategoria" element={
+          <ProtectedRoute allowedRoles={['ADMIN']} element={<GestionCategoria />} />
+        } />
+        <Route path="/GestionDependencia" element={
+          <ProtectedRoute allowedRoles={['ADMIN']} element={<GestionDependencia />} />
         } />
 
         {/* Rutas Usuario */}
