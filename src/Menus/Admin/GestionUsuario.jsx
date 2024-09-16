@@ -54,6 +54,9 @@ const GestionUsuario = () => {
             name: 'Estado',
             selector: row => row.stateUser
         },
+        {
+            name: 'Editar',
+        },
 
     ]
     return (
@@ -73,7 +76,9 @@ const GestionUsuario = () => {
                         <DataTable
                             columns={columns}
                             data={data}
-                            fixedHeader
+                            responsive
+                            pagination
+                            paginationPerPage={7}
                         />
                     </form>
                 </div>

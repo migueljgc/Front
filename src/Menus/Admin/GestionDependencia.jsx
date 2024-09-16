@@ -30,6 +30,9 @@ const GestionDependencia = () => {
             name: 'Nombre Dependencia',
             selector: row => row.nameDependence
         },
+        {
+            name: 'Editar',
+        },
 
     ]
     return (
