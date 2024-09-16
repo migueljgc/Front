@@ -1,29 +1,26 @@
-.Crear {
-    display: grid;
-    height: 100vh;
+.CrearUsuario{
     font-family: 'Montserrat', sans-serif;
+    background-color: #ebeef3;
+    height: 100vh;
     display: grid;
-    grid-template-columns: 0.4fr 1.5fr;
+    grid-template-columns: 0.5fr 1.5fr;
     grid-template-rows: 0.3fr;
     grid-auto-columns: 1fr;
     gap: 0px 2px;
     grid-auto-flow: row;
     grid-template-areas:
-        "menus cuerpo";
+        "menus cuerpos";
 }
 
 .menus {
     grid-area: menus;
 }
 
-.cuerpo {
-    grid-area: cuerpo;
+
+.cuerpos {
+    grid-area: cuerpos;
     background-image: url('/images/image.png');
-    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen en la pantalla */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    align-items: center;
-    text-align: center;
+
 }
 
 .title {
@@ -36,6 +33,7 @@
 .form {
     display: flex;
     justify-content: center;
+    
 }
 
 .solicitud-form {
@@ -47,42 +45,43 @@
     align-items: center;
     text-align: center;
     width: 70%;
+    justify-content: center;
+    background: #f7faff;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.form-group {
-    margin-bottom: 25px;
+.input-box2{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 7px;
+    
 }
 
-.form-group label {
+.input-box2 label {
     margin-bottom: 5px;
     margin-left: 30px;
     padding-right: 30px;
+    font-size: 15px;
 }
 
-.form-group input,
-.form-group textarea,
-.form-group select {
+.input-box2 input, select{
     width: 50%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-sizing: border-box;
     margin-right: 30px;
+    font-size: 13px;
+    background: #cadae5;
 }
+.Buton{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 3px;
 
-.file-input-button {
-    background-color: #E0E0E0;
-    border: 1px solid #ccc;
-    padding: 6px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 80%;
-    margin-right: 10px;
 }
-
-.submit-btn {
+.Buton button{
     background-color: #ec7548;
     color: white;
     border: none;
@@ -93,8 +92,14 @@
     font-size: 16px;
 }
 
-.submit-btn:hover {
-    background-color: #ec7548;
+.labelAndA{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;  
+    margin-right: 40px;  
+    margin-left: 50px;
 }
-
-
+.A{
+    color: #000;
+    font-weight: bold;
+}

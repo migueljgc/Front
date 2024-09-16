@@ -3,9 +3,11 @@ import '../Admin/GestionUsuario.css'
 import { MenuAdmin } from '../../componentes/Menu';
 import DataTable from 'react-data-table-component';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const GestionUsuario = () => {
     const [data, setData] = useState([]);
+    const navigate = useNavigate();
     const token = localStorage.getItem('token');
 
     const fetchData = async () => {
@@ -20,6 +22,9 @@ const GestionUsuario = () => {
         }
 
     };
+    const handleCrear = () => {
+        navigate('/CrearUsuario')
+    }
     useEffect(() => {
         document.title = "Gestionar Usuarios"
         fetchData();
@@ -57,11 +62,12 @@ const GestionUsuario = () => {
                 <MenuAdmin />
             </div>
             <div className="cuerpos">
-                <h1 className="title">CONSULTAR SOLICITUD</h1>
+                <h1 className="title">GESTION USUARIO</h1>
                 <div className="form">
                     <form className="solicitud-form">
                         <div className="busqueda">
                             <input type="text" placeholder='Buscar' />
+                            <button className='btnCrear' onClick={handleCrear}  >Crear</button>
                         </div>
 
                         <DataTable

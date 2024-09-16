@@ -11,6 +11,9 @@ import GestionUsuario from '../src/Menus/Admin/GestionUsuario';
 import GestionCategoria from '../src/Menus/Admin/GestionCategoria';
 import GestionDependencia from '../src/Menus/Admin/GestionDependencia';
 import Dashboard from '../src/Menus/Admin/Dashboard';
+import CrearCategoria from '../src/Menus/Admin/CrearCategoria';
+import CrearDependencias from '../src/Menus/Admin/CrearDependencias';
+import CrearUsuario from '../src/Menus/Admin/CrearUsuario';
 
 
 export const AppRouter = () => {
@@ -43,6 +46,15 @@ export const AppRouter = () => {
         } />
         <Route path="/GestionDependencia" element={
           <ProtectedRoute allowedRoles={['ADMIN']} element={<GestionDependencia />} />
+        } />
+        <Route path="/CrearUsuario" element={
+          <ProtectedRoute allowedRoles={['ADMIN']} element={<CrearUsuario />} />
+        } />
+        <Route path="/CrearCategoria" element={
+          <ProtectedRoute allowedRoles={['ADMIN']} element={<CrearCategoria />} />
+        } />
+        <Route path="/CrearDependencias" element={
+          <ProtectedRoute allowedRoles={['ADMIN']} element={<CrearDependencias />} />
         } />
 
         {/* Rutas Usuario */}
