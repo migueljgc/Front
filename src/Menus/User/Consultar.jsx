@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import '../User/Consultar.css'
-import {Menu }from '../../componentes/Menu';
+import { Menu } from '../../componentes/Menu';
 import axios from 'axios';
 import DataTable from 'react-data-table-component';
+import {UserinfoUser} from '../../componentes/Userinfo'
 
 
 const Consultar = () => {
@@ -52,16 +53,16 @@ const Consultar = () => {
         {
             name: 'Estado',
             selector: row => row.requestState.nameRequestState
-        },        
+        },
         {
             name: 'Respuesta',
             selector: row => row.answer
         },
         {
             name: 'Accion'
-           
+
         },
-        
+
     ]
 
     return (
@@ -70,7 +71,14 @@ const Consultar = () => {
                 <Menu />
             </div>
             <div className="cuerpo">
-                <h1 className="title">CONSULTAR SOLICITUD</h1>
+                <div className="headers">
+                    <h1 className="title">CONSULTAR SOLICITUD</h1>
+                    <div className="user-menu">
+                        <UserinfoUser />
+
+                    </div>
+                </div>
+
                 <div className="form">
                     <form className="solicitud-form">
                         <div className="busqueda">

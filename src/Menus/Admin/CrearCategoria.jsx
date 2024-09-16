@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../Admin/CrearCategoria.css'
 import axios from 'axios';
 import { MenuAdmin } from '../../componentes/Menu';
+import { UserinfoAmin } from '../../componentes/Userinfo';
 
 const CrearCategoria = () => {
     const [data, setData] = useState([]);
@@ -64,7 +65,13 @@ const CrearCategoria = () => {
                 <MenuAdmin />
             </div>
             <div className="cuerpos">
-                <h1 className="title">CREAR CATEGORIA</h1>
+            <div className="headers">
+                    <h1 className="title">CREAR CATEGORIA</h1>
+                    <div className="user-menu">
+                        <UserinfoAmin/>
+
+                    </div>
+                </div>
                 <div className="form">
                     <form className="solicitud-form" onSubmit={handleSubmit}>
                         <div className="input-box">

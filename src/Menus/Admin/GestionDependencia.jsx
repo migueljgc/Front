@@ -4,6 +4,7 @@ import '../Admin/GestionDependencia.css'
 import DataTable from 'react-data-table-component';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { UserinfoAmin } from '../../componentes/Userinfo';
 
 const GestionDependencia = () => {
     const [data, setData] = useState([]);
@@ -41,7 +42,13 @@ const GestionDependencia = () => {
                 <MenuAdmin />
             </div>
             <div className="cuerpos">
-                <h1 className="title">GESTION DE DEPENDENCIAS</h1>
+            <div className="headers">
+                    <h1 className="title">GESTION DE DEPENDENCIAS</h1>
+                    <div className="user-menu">
+                        <UserinfoAmin/>
+
+                    </div>
+                </div>
                 <div className="form">
                     <form className="solicitud-form">
                         <div className="busqueda">

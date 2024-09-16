@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../User/Crear.css'
-import {Menu} from '../../componentes/Menu';
+import { Menu } from '../../componentes/Menu';
+import {UserinfoUser} from '../../componentes/Userinfo'
 import axios from 'axios';
 
 const Crear = () => {
@@ -171,7 +172,7 @@ const Crear = () => {
         } catch (error) {
             console.error('Error al guardar información:', error.response ? error.response.data : error.message);
         }
-        
+
     };
 
     return (
@@ -180,10 +181,17 @@ const Crear = () => {
                 <Menu />
             </div>
             <div className="cuerpo">
-                <h1 className="title">CREA TU SOLICITUD</h1>
+                <div className="headers">
+                    <h1 className="title">CREA TU SOLICITUD</h1>
+                    <div className="user-menu">
+                        <UserinfoUser />
+
+                    </div>
+                </div>
+
                 <div className="form">
                     <form className="solicitud-form" onSubmit={handleSubmit}>
-                    <input type='hidden' name="date" value={date} />
+                        <input type='hidden' name="date" value={date} />
                         <div className="form-group">
                             <label>Tipo De Solicitud</label>
                             <select
@@ -258,9 +266,9 @@ const Crear = () => {
                         <div className="form-group">
                             <label>Adjuntar Archivo</label>
                             <input type="file" className="file-input-button" id='file'
-                            onChange={handleFileChange} 
-                            ref={fileInputRef}
-                            name='archivo'/>
+                                onChange={handleFileChange}
+                                ref={fileInputRef}
+                                name='archivo' />
 
                         </div>
                         <button type="submit" className="submit-btn">Enviar</button>

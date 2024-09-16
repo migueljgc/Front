@@ -4,6 +4,7 @@ import axios from 'axios';
 import { MenuAdmin } from '../../componentes/Menu';
 import DataTable from 'react-data-table-component';
 import { useNavigate } from 'react-router-dom';
+import { UserinfoAmin } from '../../componentes/Userinfo';
 
 
 const GestionCategoria = () => {
@@ -47,7 +48,14 @@ const GestionCategoria = () => {
                 <MenuAdmin />
             </div>
             <div className="cuerpos">
-                <h1 className="title">GESTION DE CATEGORIAS</h1>
+            <div className="headers">
+                     <h1 className="title">GESTION DE CATEGORIAS</h1>
+                    <div className="user-menu">
+                        <UserinfoAmin/>
+
+                    </div>
+                </div>
+               
                 <div className="form">
                     <form className="solicitud-form">
                         <div className="busqueda">
